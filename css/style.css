@@ -60,6 +60,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
+    background-color: #050510;
 }
 
 .header__container {
@@ -82,6 +83,7 @@ body{
     background-position: top center;
     background-size: cover;
     min-height: 100vh;
+    margin-bottom: 110px;
 }
 
 .header__top {
@@ -285,6 +287,122 @@ body{
     align-items: center;
     color: #607290;
 }
+
+/* WHAT */
+
+.what {
+    background-image: url(../images/what-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: #050510;
+    padding: 90px 0;
+    margin-bottom: 150px;
+}
+
+.what__top {
+    max-width: 620px;
+    margin-left: auto;
+    margin-bottom: 240px;
+}
+
+.what__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.what__text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #607290;
+    margin-bottom: 50px;
+}
+
+.what__btn-paper {
+    background-color: #20bfe1;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.what__btn-paper:hover {
+    background-color:#a11f85;
+    transition: all .3s;
+}
+
+.what__btn-play {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.what__btn-play:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.what__title-arrow {
+    position: relative;
+    padding-left: 50px;
+}
+
+.what__title-arrow::before {
+    position: absolute;
+    content: url(../images/arrow-lef.svg);
+    top: 4px;
+    left: 0;
+    width: 50px;
+    height: 60px;
+}
+
+.what__presale {
+    margin-bottom: 75px;
+}
+
+.what__presale-text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #607290;
+}
+
+.what__release-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.what__release-item {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.what__release-items {
+    max-width: 250px;
+}
+
+.what__release-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.what__presale-text--white {
+    color: #FFFFFF;
+}
+
+
 
 
 
