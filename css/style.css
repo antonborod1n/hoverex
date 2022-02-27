@@ -75,6 +75,27 @@ body{
     padding: 0 15px;
 }
 
+.title {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.9px;
+    color: #FFFFFF;
+}
+
+.title-arrow {
+    position: relative;
+    padding-left: 50px;
+}
+
+.title-arrow::before {
+    position: absolute;
+    content: url(../images/arrow-lef.svg);
+    top: 4px;
+    left: 0;
+    width: 50px;
+    height: 60px;
+}
+
 /* HEADER */
 
 .header {
@@ -307,9 +328,6 @@ body{
 }
 
 .what__title {
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
     margin-bottom: 30px;
 }
 
@@ -352,20 +370,6 @@ body{
     cursor: pointer;
 }
 
-.what__title-arrow {
-    position: relative;
-    padding-left: 50px;
-}
-
-.what__title-arrow::before {
-    position: absolute;
-    content: url(../images/arrow-lef.svg);
-    top: 4px;
-    left: 0;
-    width: 50px;
-    height: 60px;
-}
-
 .what__presale {
     margin-bottom: 75px;
 }
@@ -403,6 +407,236 @@ body{
 }
 
 
+/* FEATURES */
+
+.features {
+    background-image: url(../images/features-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.features__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    color: #607290;
+    max-width: 637px;
+    margin: 0 auto;
+}
+
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 213px;
+}
+
+.features__box {
+    text-align: center;
+    max-width: 250px;
+}
+
+.features__icon {
+    margin: 0 auto;
+}
+
+.features__box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.features__subtitle {
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.features__text {
+    margin-bottom: 33px;
+}
+
+.features__btn {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.features__btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* PARTNERS */
+
+.partners {
+    background-image: url(../images/partners-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding: 176px 0 50px;
+}
+
+.partners__title {
+    margin-bottom: 65px;
+    text-align: left;
+}
+
+.partners__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.partners__item {
+    border: 1px solid #23293B;
+    border-top: none;
+    padding: 33px 60px;
+}
+
+.partners__item--left {
+    border-top: none;
+    border-left: none;
+}
+
+.partners__item--bottom {
+    border-bottom: none;
+}
+
+.partners__item--right {
+    border-right: none;
+}
+
+.partners__img {
+    margin: 0 auto;
+}
+
+.partners__link {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+
+.partners__link:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* ROADMAP */
+
+.roadmap {
+    background-image: url(../images/roadmap-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0 20px;
+}
+
+.roadmap__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.roadmap__subtitle {
+    font-size: 18px;
+    line-height: 27px;
+    color: #607290;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.roadmap__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.roadmap__box--right {
+    text-align: right;
+    position: relative;
+}
+
+.roadmap__box--right::before {
+    position: absolute;
+    content: '';
+    border-right: 9px solid #D2538A;
+    width: 9px;
+    height: 510px;
+    top: 73px;
+    right: -75px;
+}
+
+.roadmap__box--left {
+    text-align-last: left;
+    margin-left: 135px;   
+}
+
+.roadmap__item {
+    max-width: 240px;
+    margin-top: 70px;
+}
+
+.roadmap__item--top {
+    padding-top: 70px;
+}
+
+.roadmap__data {
+    font-size: 18px;
+    line-height: 22px;
+    color: #607290;
+    position: relative;
+}
+
+.roadmap__data--right::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background-color: #607290;
+    top: 20px;
+    right: -66px;
+}
+
+.roadmap__data--left::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background-color: #607290;
+    top: 20px;
+    left: -60px;
+}
+
+.roadmap__text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
 
 
 
@@ -410,6 +644,77 @@ body{
 
 
 
+/* TEAM */
+
+.team {
+    background-image: url(../images/team-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 240px 0 45px;
+    margin-bottom: 135px;
+}
+
+.team__title {
+    margin-bottom: 30px;
+}
+
+.team__text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #607290;
+    max-width: 300px;
+    margin-bottom: 70px;
+}
+
+.team__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team__item {
+    text-align: center;
+}
+
+.team__img {
+    border-radius: 50%;
+    margin-bottom: 27px;
+    box-shadow: 0px 0px 50px 10px rgba(200, 227, 247, 0.2);
+}
+
+.team__name {
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.team__prof {
+    font-size: 18px;
+    line-height: 20px;
+    color: #607290;
+    margin-bottom: 30px;
+}
+
+.team__link {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.team__link:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all .3s;
+    cursor: pointer;
+}
 
 /* FOOTER */
 
@@ -419,7 +724,6 @@ body{
     background-size: cover;
     background-position: center center;
     padding: 72px 0 100px;
-    
 }
 
 .footer__inner {
