@@ -1,6 +1,6 @@
 'use strict'; /*- объявляем что будем работать в новом режиме */
 
-const deadline = '2022-12-01';
+const deadline = '2023-01-01';
 
 function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
